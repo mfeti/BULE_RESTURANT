@@ -1,4 +1,4 @@
-import { heroBg } from "../assets";
+import { heroBg, polygon } from "../assets";
 export const navLinks = [
   { href: "#home", label: "Home" },
   { href: "#about-us", label: "About Us" },
@@ -17,4 +17,14 @@ export const bgImage = {
   backgroundSize: "cover",
   width: "100%",
   height: "100%",
+};
+
+export const bgStyle = {
+  backgroundImage: `url(${polygon})`,
+  backgroundRepeat: "no-repeat",
+  backgroundPosition: "center",
+  backgroundSize: "cover",
+  width: "100%",
+  height: "100%",
+  position: "relative",
 };

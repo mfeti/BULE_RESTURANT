@@ -62,7 +62,7 @@ function Navbar() {
             </li>
             {/* Login button section */}
             <li>
-              <Button style="uppercase text-white font-inter font-semibold bg-secondary px-4 h-[40px] py-2 focus:outline-none focus:ring focus:ring-secondary/30 rounded-sm flex gap-2 items-center hover:scale-125 duration-300 whitespace-nowrap">
+              <Button style="bg-secondary">
                 <span>
                   <FaUser />
                 </span>{" "}
