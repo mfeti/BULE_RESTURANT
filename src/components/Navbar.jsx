@@ -9,18 +9,18 @@ function Navbar() {
   const [activeLink, setActiveLink] = useState();
   return (
     <header className="shadow-sm bg-white">
-      <div className="container flex items-center justify-between py-3 sm:py-4">
+      <div className="xl:px-24 sm:px-16 px-8 flex items-center justify-between py-3 sm:py-4">
         {/* Logo section */}
-        <div className="font-bold text-3xl">
+        <div className="font-bold xl:text-3xl text-2xl">
           <a href="/" className="whitespace-nowrap">
             BULE-RESTAURANT
           </a>
         </div>
         {/* NavLinks section */}
         <nav className="flex">
-          <ul className="lg:flex hidden items-center gap-10">
+          <ul className="flex items-center gap-10">
             {navLinks.map((link, i) => (
-              <li key={link.label}>
+              <li key={link.label} className="lg:block hidden">
                 <a
                   href={link.href}
                   className={`${
@@ -33,7 +33,7 @@ function Navbar() {
               </li>
             ))}
             {/* Sample dropdown for categories */}
-            <li className="group">
+            <li className="group lg:block hidden">
               <a
                 href=""
                 className={`text-xl hover:text-primary font-semibold transition-all duration-300 flex items-center gap-2`}
@@ -62,7 +62,7 @@ function Navbar() {
             </li>
             {/* Login button section */}
             <li>
-              <Button style="uppercase text-white font-inter font-semibold bg-secondary px-4 h-[40px] py-2 focus:outline-none focus:ring focus:ring-secondary/30 rounded-sm flex gap-2 items-center hover:scale-125 duration-300">
+              <Button style="uppercase text-white font-inter font-semibold bg-secondary px-4 h-[40px] py-2 focus:outline-none focus:ring focus:ring-secondary/30 rounded-sm flex gap-2 items-center hover:scale-125 duration-300 whitespace-nowrap">
                 <span>
                   <FaUser />
                 </span>{" "}

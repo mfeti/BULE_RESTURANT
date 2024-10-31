@@ -22,6 +22,9 @@ export default {
           lg: "4rem",
         },
       },
+      screens: {
+        lg: "1080px",
+      },
     },
   },
   plugins: [],
