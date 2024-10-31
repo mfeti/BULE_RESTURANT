@@ -9,7 +9,7 @@ function Navbar() {
   const [activeLink, setActiveLink] = useState();
   return (
     <header className="shadow-sm bg-white">
-      <div className="xl:px-24 sm:px-16 px-8 flex items-center justify-between py-3 sm:py-4">
+      <div className="2xl:px-48 xl:px-24 sm:px-16 px-8 flex items-center justify-between py-3 sm:py-4">
         {/* Logo section */}
         <div className="font-bold xl:text-3xl text-2xl">
           <a href="/" className="whitespace-nowrap">
