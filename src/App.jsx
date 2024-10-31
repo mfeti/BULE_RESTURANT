@@ -13,6 +13,7 @@ function App() {
         <Banner />
         <WhyChoose />
         <About />
+        <Banner />
       </main>
     </div>
   );
