@@ -18,7 +18,7 @@ function Navbar({ handlePopup }) {
           </a>
         </div>
         {/* NavLinks section */}
-        <nav className="flex">
+        <nav className="sm:flex hidden">
           <ul className="flex items-center gap-10">
             {navLinks.map((link, i) => (
               <li key={link.label} className="lg:block hidden">

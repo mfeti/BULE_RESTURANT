@@ -58,19 +58,19 @@ function Banner() {
         </div>
         <div
           data-aos="fade-up-right"
-          className="absolute sm:bottom-0 -left-16 sm:left-0 opacity-30 sm:opacity-100"
+          className="absolute sm:bottom-0 bottom-5 -left-16 sm:left-0 opacity-30 sm:opacity-100 z-[-30]"
         >
           <img src={tomato} alt="tomato" className="max-w-[280px]" />
         </div>
         <div
           data-aos="fade-left"
-          className="absolute sm:right-20 -right-16 top-10 opacity-30 sm:opacity-100"
+          className="absolute sm:right-20 -right-16 top-10 opacity-30 sm:opacity-100 z-[-30]"
         >
           <img src={lemon} alt="lemon" className="max-w-[200px]" />
         </div>
         <div
           data-aos="fade-left"
-          className="hidden sm:block absolute right-0 bottom-0"
+          className="hidden sm:block absolute right-0 bottom-0 z-[-30]"
         >
           <img src={apple} alt="apple" className="max-w-[200px]" />
         </div>
