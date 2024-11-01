@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { useState } from "react";
 import { IoMdArrowDropdown } from "react-icons/io";
 import { FaUser } from "react-icons/fa";
@@ -5,10 +6,10 @@ import { FaUser } from "react-icons/fa";
 import { dropDownLinks, navLinks } from "../constants";
 import Button from "../ui/Button";
 
-function Navbar() {
+function Navbar({ handlePopup }) {
   const [activeLink, setActiveLink] = useState();
   return (
-    <header className="shadow-sm bg-white">
+    <header data-aos="fade" className="shadow-lg bg-white">
       <div className="2xl:px-48 xl:px-24 sm:px-16 px-8 flex items-center justify-between py-3 sm:py-4">
         {/* Logo section */}
         <div className="font-bold xl:text-3xl text-2xl">
@@ -62,7 +63,7 @@ function Navbar() {
             </li>
             {/* Login button section */}
             <li>
-              <Button style="bg-secondary">
+              <Button style="bg-secondary" handlePopup={handlePopup}>
                 <span>
                   <FaUser />
                 </span>{" "}

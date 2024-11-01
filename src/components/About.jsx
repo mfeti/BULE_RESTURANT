@@ -1,17 +1,25 @@
+/* eslint-disable react/prop-types */
 import { FaUser } from "react-icons/fa";
 import { bgStyle } from "../constants";
 import Button from "../ui/Button";
 import { vectorWave } from "../assets";
 
-function About() {
+function About({ handlePopup }) {
   return (
     <section style={bgStyle} className="sm:py-14 py-7">
       <div className="2xl:px-40 xl:px-24 sm:px-16 px-8 min-h-[500px] pt-24">
-        <h2 className="text-4xl font-semibold text-center text-white tracking-wider">
+        <h2
+          data-aos="fade"
+          className="text-4xl font-semibold text-center text-white tracking-wider"
+        >
           About Us
         </h2>
         {/* card section */}
-        <div className="bg-white/70 mt-10 px-8 py-10">
+        <div
+          data-aos="fade"
+          data-aos-delay="300"
+          className="bg-white/70 mt-10 px-8 py-10"
+        >
           <p className="text-dark text-lg font-semibold">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
             doloribus blanditiis culpa ipsa autem! Quas in ut cumque quo, eum ab
@@ -27,7 +35,7 @@ function About() {
             esse.
           </p>
           <div className="flex justify-center mt-14">
-            <Button style="bg-primary ">
+            <Button style="bg-primary " handlePopup={handlePopup}>
               <span>
                 <FaUser />
               </span>{" "}

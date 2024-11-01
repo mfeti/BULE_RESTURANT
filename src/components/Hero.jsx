@@ -7,20 +7,33 @@ function Hero() {
       <div className="2xl:px-48 xl:px-24 sm:px-16 px-8 py-4 sm:py-12 flex md:flex-row flex-col-reverse justify-center items-center">
         {/* Text content section */}
         <div className="flex flex-col gap-10 justify-center">
-          <h1 className="font-inter font-normal text-5xl max-w-2xl">
+          <h1
+            data-aos="fade-up"
+            className="font-inter font-normal text-5xl max-w-2xl"
+          >
             Fresh & Healthy Meal Plan{" "}
             <span className="text-secondary font-cursive text-7xl">
               Delivery
             </span>{" "}
             in Miami
           </h1>
-          <p className="font-normal text-sm text-slate-700 max-w-80">
+          <p
+            data-aos="fade-up"
+            data-aos-delay="500"
+            className="font-normal text-lg text-dark max-w-80"
+          >
             Delicious Meals Delivered to Your Door From $132.95 per week.
           </p>
-          <PrimaryButton />
+          <div data-aos="fade-up" data-aos-delay="300" className="">
+            <PrimaryButton />
+          </div>
         </div>
         {/* Image  section */}
-        <div className="relative z-[30]">
+        <div
+          data-aos="zoom-in"
+          data-aos-delay="500"
+          className="relative z-[30]"
+        >
           <img
             src={hero}
             alt="food"

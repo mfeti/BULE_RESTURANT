@@ -5,11 +5,14 @@ function WhyChoose() {
     <section className="bg-gray-50 py-14 md:py-28">
       <div className="2xl:px-40 xl:px-24 sm:px-16 px-8">
         {/* text content section */}
-        <h2 className="pb-16 text-center font-semibold text-2xl tracking-wider text-dark">
+        <h2
+          data-aos="fade"
+          className="pb-24 text-center font-semibold text-2xl tracking-wider text-dark"
+        >
           Why Choose Us
         </h2>
         {/* card section */}
-        <div className="">
+        <div data-aos="fade" data-aos-delay="300" className="">
           <div className="grid md:grid-cols-4 sm:grid-cols-2 grid-cols-1 md:gap-4 gap-14">
             {/* 1st 📦 */}
             <div className="text-center flex flex-col justify-center items-center gap-2 px-2">
