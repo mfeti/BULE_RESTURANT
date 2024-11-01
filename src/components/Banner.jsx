@@ -13,7 +13,7 @@ function Banner() {
           >
             Taste the Healthy Difference
           </h2>
-          <div className="grid sm:grid-cols-2 grid-cols-1 grid-rows-2 md:gap-14 gap-4 space-y-10 place-content-center lg:px-24">
+          <div className="grid sm:grid-cols-2 grid-cols-1 grid-rows-2 md:gap-14 gap-4 space-y-10 place-content-center xl:px-24">
             <p
               data-aos="fade-up"
               data-aos-delay="300"
