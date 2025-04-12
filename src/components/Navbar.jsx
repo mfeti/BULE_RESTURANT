@@ -14,7 +14,7 @@ function Navbar({ handlePopup }) {
         {/* Logo section */}
         <div className="font-bold xl:text-3xl text-2xl">
           <a href="/" className="whitespace-nowrap">
-            BULE-RESTAURANT
+            ቡሌ | BUULE-RESTAURANT
           </a>
         </div>
         {/* NavLinks section */}
